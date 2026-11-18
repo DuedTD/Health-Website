@@ -1,0 +1,75 @@
+.tandl{
+    display: flex;
+    flex-direction: row;
+    /*background: antiquewhite;*/
+    margin: 40px 0px 40px 40px
+}
+
+.logo{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-image{
+    height: auto;
+    max-width: 100%;
+    width:22em;
+    animation: 3s flanim ease-in-out infinite;
+}
+
+@keyframes flanim{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform{
+            transform: translateY(0);
+        }
+    }
+}
+
+.tandc{
+    flex: 6;
+    display: flex;
+    /*background: antiquewhite;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ztit{
+    flex: 10;
+    font-size:6em;
+    padding:0 0.4em 0.2em 0.4em;
+    border-bottom: solid white 0.04em;
+    border-top: solid white 0.04em;
+}
+
+.zcap{
+    margin-top:1em;
+    flex: 5;
+    font-size:1.5em;
+}
+
+.jbt{
+    margin: 1em;
+    border-radius: 15px;
+    border: none;
+    padding: 1em 2em 1em 2em;
+    font-size: 1.5em;
+    background: rgba(29, 129, 29, 0.486);
+    transition: 0.1s ease-in-out;
+    box-shadow: 0.1em 0.1em 0.1em #ffffff
+}
+
+.jbt:hover{
+    background: rgb(144, 250, 123);
+    color: black;
+    box-shadow: 0.1em 0.1em 0.1em #000000
+}

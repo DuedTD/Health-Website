@@ -1,0 +1,56 @@
+*{
+    color: white;
+}
+
+body{
+    background: radial-gradient(circle at 50% 50%, #b8dd8f 0%, #7db064 50%, #4a6c38 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.nvgbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.nvgbar a{
+    border-radius: 20px;
+    background: none;
+    color: white;
+    padding: 10px 30px;
+    margin:10px;
+    transition: 0.3s ease;
+    font-size: 1.25em;
+    text-decoration: none;
+    user-select: none;
+    border-top: solid #b8dd8f;
+    border-bottom: solid #b8dd8f
+}
+
+.nvgbar a:hover {
+    box-shadow: 0 0 15px #b8dd8f;
+    background: #b8dd8f;
+    color: black
+}
+
+.active{
+    background: #b8dd8f !important;
+    color: black !important;
+    box-shadow: 0 0 0 #b8dd8f !important;
+}
+
+
+.nvgbar .user {
+    margin-left: auto;
+    padding: 10px 40px
+}
+
+.container{
+    margin: 16px;
+}
+
