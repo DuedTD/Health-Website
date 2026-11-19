@@ -1,5 +1,13 @@
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 *{
     color: white;
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
 }
 
 body{
@@ -15,7 +23,6 @@ body{
     display: flex;
     width: 100%;
     z-index: 100;
-    border-radius: 10px;
 }
 
 .nvgbar a{
@@ -23,7 +30,7 @@ body{
     background: none;
     color: white;
     padding: 10px 30px;
-    margin:10px;
+    margin:15px;
     transition: 0.3s ease;
     font-size: 1.25em;
     text-decoration: none;
@@ -51,6 +58,17 @@ body{
 }
 
 .container{
-    margin: 16px;
+    opacity: 0;
+    animation: init 0.9s ease-in-out forwards;
 }
 
+@keyframes init {
+    0% {
+        opacity: 0; 
+        transform:translateY(1.5em) scale(95%);
+    }
+    100% { 
+        opacity: 1; 
+        transform:translateY(0) scale(100%);
+    }
+}

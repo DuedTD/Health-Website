@@ -1,0 +1,139 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    gap: 1em;
+    height: 100vh;
+    width: 80%;
+    margin-top: 2em;
+}
+
+.chatHolder{
+    flex: 9;
+    background: rgb(0,0,0,0.7);
+    border-radius: 20px;
+    padding: 2em;
+
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.conprompt {
+    background: linear-gradient(to top, black, rgb(0,0,0,0));
+    position: fixed;
+    bottom: 0em;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    padding: 0 0 1.5em 0;
+    justify-content: center;
+    align-items: center;
+    animation: init2 0.9s ease-in-out forwards;
+}
+
+@keyframes init2 {
+    0% {
+        opacity: 0; 
+        transform:translateY(1.5em);
+    }
+    100% { 
+        opacity: 1; 
+        transform:translateY(0);
+    }
+}
+
+.chatPrompt {
+    flex: 1;
+    padding: 0.2em;
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.textchat{
+    flex: 9;
+    background-color: rgba(152, 236, 177, 0.425);
+    margin: 0.5em;
+    border-radius: 99px;
+    overflow: hidden;
+    align-items: center;
+    max-width: 60em;
+    display: flex;
+    flex-direction: row;
+    gap:1em
+}
+
+.sentbutton{
+    background: rgb(38, 92, 38);
+    padding:0.5em;
+    border-radius: 99px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    transition: 0.2s ease-in-out;
+}
+
+.sentbutton svg {
+    width:2.25em;
+    height: 2.25em;
+}
+
+.sentbutton:hover{
+    transform: scale(105%);
+    box-shadow: 0em 0em 1em white;
+}
+
+.txtpr{  
+    font-size:1.35em;
+    width: 90%;
+    background:none;
+    border: none;
+    outline: none;
+    resize: none;
+
+    max-height: 10em;
+    overflow: auto;
+    align-items: center;
+    
+    display: block;
+    padding: 1em;
+    margin-left:1em;
+    align-content: center
+}
+
+.txtpr::placeholder{
+    color:rgb(195, 255, 200)
+}
+
+.ztit{
+    display: flex;
+    padding: 1em 1em 0.1em 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.aians{
+    font-size: 1.35em;
+    padding: 1em 1em 1em 1em;
+    background: rgba(14, 96, 66, 0.676);
+    border-radius: 20px;
+    max-width: 40em;
+    margin-right:auto
+}
+
+.uspr{
+    font-size: 1.35em;
+    padding: 1em 1em 1em 1em;
+    background: rgba(62, 101, 62, 0.676);
+    border-radius: 20px;
+    max-width: 40em;
+    margin-left:auto
+}
