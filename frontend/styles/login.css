@@ -1,0 +1,168 @@
+.mainhud{
+    display: flex;
+    padding: 1em;
+    border: solid 0.2em rgb(162, 255, 162);
+    box-shadow: 0em 0em 1em ;
+    background-image:linear-gradient(to top, rgba(0, 78, 0, 0.765), rgba(14, 56, 14, 0.299));
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 0.5em;
+    width: 32.5%;
+    margin:auto;
+    margin-top: 1em
+}
+
+.lsswitch, .inhud{
+    padding:0.3em;
+    display: flex;
+    flex-direction: row;
+    gap:0.5em;
+}
+
+.lgfade{
+    opacity: 0;
+}
+
+.inhud{
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.inhud.show-su {
+    transform: translateX(-50%);
+}
+
+.pass-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pass-wrap input {
+    width: 100%;
+    padding-right: 4.5em; 
+    box-sizing: border-box;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 0.7em;
+    background: transparent;
+    border: none;
+    color: rgb(162, 255, 162);
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25em 0.6em;
+    border-radius: 99px;
+    user-select: none;
+    transition: background 0.15s ease;
+    margin: auto;
+}
+
+.toggle-pass:hover {
+    background: rgba(162, 255, 162, 0.18);
+}
+
+.lsswitch{
+    background: rgba(6, 50, 30, 0.3);
+    border-radius: 99px;
+    width: 50%;
+    margin: auto;
+}
+
+#lg, #su, .login, .signup{
+    display: flex;
+    flex:5;
+    padding:0.5em;
+    transition: 0.5s ease-in-out;
+}
+
+.cb{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#lg, #su{
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-direction: row;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    border-radius: 99px;
+}
+
+.viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.chosen{
+    background: rgb(162, 255, 162);
+    color: black
+}
+
+.login, .signup{
+    flex-direction: column;
+    gap: 1em;
+}
+
+.t1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.t2{
+    font-size: 1.2em;
+    color:rgb(162, 255, 162);
+}
+
+.t1, .t2{
+    text-align: center;
+}
+
+.comp p{
+    font-size: 1.2em;
+    color:rgb(162, 255, 162);
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.comp input{
+    margin:0;
+    border: solid 2px rgb(162, 255, 162);
+    color:rgb(162, 255, 162);
+    background: rgba(6, 50, 30, 0.3);
+    font-weight: bold;
+    text-indent: 1%;
+}
+
+.pass-wrap input {
+    text-indent: 1%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.5em;
+    border: none;
+    background:rgb(162, 255, 162);
+    color: black;
+    border-radius: 99px;
+    font-size:1.3em;
+    margin-top:auto;
+    transition: 0.1s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(102%);
+    background:rgb(79, 126, 79);
+    color:rgb(162, 255, 162);
+}
