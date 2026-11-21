@@ -52,11 +52,19 @@ body{
     padding: 10px 30px;
     margin:15px;
     transition: 0.3s ease;
-    font-size: 1.25em;
+    font-size: 1.1em;
     text-decoration: none;
     user-select: none;
     border-top: solid #b8dd8f;
-    border-bottom: solid #b8dd8f
+    border-bottom: solid #b8dd8f;
+    font-weight: bold
+}
+
+.nvgbar img{
+    padding:0.5em;
+    width:4.75em;
+    height: auto;
+    border-radius: 15px;
 }
 
 .nvgbar a:hover {

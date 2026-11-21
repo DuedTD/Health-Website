@@ -13,7 +13,8 @@
     flex: 9;
     background: rgb(0,0,0,0.7);
     border-radius: 20px;
-    padding: 2em;
+    padding: 2em 2em 10em 2em;
+    box-shadow: 0em 0.5em 4em black;
 
     display:flex;
     flex-direction: column;

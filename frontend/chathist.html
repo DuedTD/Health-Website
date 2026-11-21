@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/chathist.css">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="nvgbar">
+        <img src="images/icon.png">
+        <a href="home.html">Home</a>
+        <a href="#">Weekly Schedule & Nutrition</a>
+        <a href="mcwkout.html">Main Chat & Workout</a>
+        <a class="active">Chat History</a>
+        <a href="#">All tabs</a>
+        <a class="user" href="login.html">User</a>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <p><span style="color: rgb(162, 255, 162);">CHAT</span> HISTORY</p>
+        </div>
+
+        <div class="mainHud">
+            <div class="holder" id="chhold">
+                <div class="child">
+                    <div class=cb>
+                        <input type="checkbox">
+                    </div>
+                    <div class="chatname" id="">
+                        <span class="ztit">Name</span> <span class = "zdesc">Test</span>
+                    </div>
+                    <div class = "ops">
+                        <span class = "time">2h ago</span> 
+                        <button class="trash-btn" aria-label="Delete">
+                        <svg class="trash-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <g class="trash-lid">
+                            <path d="M9 5.5V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1.5" />
+                            <path d="M3.5 5.5h17" />
+                            </g>
+                            <path d="M5 8h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 8Z" />
+                            <path d="M9.5 11.5v6" />
+                            <path d="M12 11.5v6" />
+                            <path d="M14.5 11.5v6" />
+                        </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

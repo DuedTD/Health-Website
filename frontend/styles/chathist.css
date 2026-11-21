@@ -1,0 +1,96 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    font-family: monospace;
+    flex: 4;
+    margin: auto 0.5em 1em 0.5em;
+    padding:0.3em;
+    font-size: 10em;
+    border-bottom: solid 0.05em;
+    border-top: solid 0.05em;
+}
+
+.mainHud{
+    flex: 7;
+    width: 60%;
+    height: 35em;
+    background: linear-gradient(to top ,rgba(86, 179, 86, 0.578) ,rgba(15, 104, 15, 0.847));
+    margin: auto 3em auto auto;
+    margin-top: 2em;
+    border: solid 0.2em rgb(162, 255, 162);
+    box-shadow: 0em 0em 1em ;    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+}
+
+.trash-btn{
+    background: rgb(11, 88, 11);
+    padding:0.7em;
+    border: none;
+    border-radius: 99px;
+    margin-left: 0.5em;
+}
+
+.holder{
+    overflow: auto;
+    margin: 1em;
+    width: 95%;
+    height: 90%;
+    padding: 1em;
+    border: solid 0.2em rgb(133, 255, 133);
+    display: flex;
+    flex-direction: column;
+
+    scrollbar-width: none;
+    gap: 1em;
+    border-radius: 2em;
+}
+
+.holder .child{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+    gap: 1em;
+    width: 100%;
+    background-color: rgba(108, 177, 117, 0.63);
+    border-radius: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.holder .chatname{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto 0 auto 0;
+    
+}
+.time{
+    color:rgba(255, 255, 255, 0.568)
+}
+
+.chatname .ztit{
+    font-weight: lighter;
+    color:rgb(52, 255, 113)
+}
+
+.chatname .zdesc{
+    font-weight: lighter;
+    color:rgba(255, 255, 255, 0.568)
+}
+
+.holder .ops{
+    display: flex;
+    margin: auto 0 auto auto;
+    font-size: 1.25em;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder .cb{
+    margin: auto 0 auto 0;
+}
