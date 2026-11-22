@@ -1,0 +1,69 @@
+{
+  "type": "nutrition_advice",
+  "message": "Chào bạn! Với mục tiêu vừa tăng cơ vừa giảm mỡ, việc cung cấp đủ chất dinh dưỡng là rất quan trọng để nuôi dưỡng cơ bắp trong khi vẫn duy trì năng lượng cho các buổi tập thể lực. Dưới đây là các nhóm dưỡng chất thiết yếu và cách linh hoạt sắp xếp bữa ăn giúp bạn đạt hiệu quả tốt nhất.",
+  "nutrients": [
+    {
+      "name": "Chất đạm (Protein)",
+      "benefit": "Giúp sửa chữa, phục hồi và phát triển các thớ cơ sau khi tập luyện, đồng thời hỗ trợ duy trì cơ bắp trong quá trình giảm mỡ.",
+      "food_sources": [
+        "Trứng",
+        "Ức gà",
+        "Đậu hũ",
+        "Cá",
+        "Thịt heo nạc"
+      ]
+    },
+    {
+      "name": "Chất bột đường (Carbohydrates)",
+      "benefit": "Cung cấp nguồn năng lượng chính cho não bộ và cơ bắp hoạt động hiệu quả trong suốt buổi tập 60 phút của bạn.",
+      "food_sources": [
+        "Cơm gạo lứt",
+        "Khoai lang",
+        "Yến mạch",
+        "Chuối",
+        "Bánh mì đen"
+      ]
+    },
+    {
+      "name": "Chất béo lành mạnh",
+      "benefit": "Hỗ trợ sản xuất hormone, điều hòa cơ thể và hấp thu các loại vitamin thiết yếu.",
+      "food_sources": [
+        "Dầu ô liu",
+        "Quả bơ",
+        "Các loại hạt",
+        "Đậu phộng"
+      ]
+    },
+    {
+      "name": "Chất xơ",
+      "benefit": "Giúp hệ tiêu hóa khỏe mạnh, tạo cảm giác no lâu và hỗ trợ quá trình kiểm soát cân nặng.",
+      "food_sources": [
+        "Rau xanh các loại",
+        "Bông cải xanh",
+        "Cà rốt",
+        "Táo"
+      ]
+    },
+    {
+      "name": "Vitamin và Khoáng chất",
+      "benefit": "Tăng cường sức đề kháng, hỗ trợ chuyển hóa năng lượng và phục hồi cơ thể sau vận động.",
+      "food_sources": [
+        "Cam",
+        "Cà chua",
+        "Rau bina",
+        "Ớt chuông"
+      ]
+    }
+  ],
+  "meal_timing": [
+    {
+      "context": "Trước khi tập luyện",
+      "recommendation": "Nếu bạn ăn một bữa lớn, hãy dùng cách thời điểm tập khoảng 2-3 tiếng để cơ thể kịp tiêu hóa. Nếu gần giờ tập hơn, bạn chỉ nên ăn một bữa phụ nhẹ (như một quả chuối hoặc ít các loại hạt) để tránh cảm giác nặng bụng."
+    },
+    {
+      "context": "Sau khi tập luyện",
+      "recommendation": "Hãy ưu tiên một bữa ăn hoặc món ăn nhẹ tiện lợi có chứa protein và carbohydrate trong thời gian sớm thuận tiện cho bạn để giúp cơ bắp phục hồi, không bắt buộc phải ăn ngay lập tức từng phút."
+    }
+  ],
+  "missing_fields": []
+}

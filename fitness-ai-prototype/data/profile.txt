@@ -1,0 +1,12 @@
+{
+  "goal": "muscle_gain_fat_loss",
+  "experience": "beginner",
+  "days_per_week": 4,
+  "minutes_per_session": 60,
+  "equipment": [
+    "bodyweight"
+  ],
+  "physical_limitations": "Không có",
+  "height_cm": 162,
+  "weight_kg": 66
+}

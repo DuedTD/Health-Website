@@ -1,0 +1,180 @@
+{
+  "type": "workout_plan",
+  "summary": "Chương trình tập luyện 4 ngày/tuần dành cho người mới bắt đầu, tập trung vào tăng cơ và giảm mỡ, chỉ sử dụng trọng lượng cơ thể (bodyweight).",
+  "sessions": [
+    {
+      "day_label": "Buổi 1: Thân trên cơ bản",
+      "duration_minutes": 60,
+      "exercises": [
+        {
+          "name": "Chống đẩy quỳ gối (Knee Push-ups)",
+          "sets": 3,
+          "reps": "8-12",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Động tác siêu nhân (Superman)",
+          "sets": 3,
+          "reps": "10-15",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Chống tay nâng người dạng Plank (Plank Shoulder Taps)",
+          "sets": 3,
+          "reps": "20 nhịp",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Gập bụng cơ bản (Crunches)",
+          "sets": 3,
+          "reps": "12-15",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        }
+      ]
+    },
+    {
+      "day_label": "Buổi 2: Thân dưới cơ bản",
+      "duration_minutes": 60,
+      "exercises": [
+        {
+          "name": "Ngồi xổm không tạ (Bodyweight Squats)",
+          "sets": 3,
+          "reps": "10-15",
+          "rest_seconds": 90,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Bước lùi chùng chân (Reverse Lunges)",
+          "sets": 3,
+          "reps": "8-10 mỗi chân",
+          "rest_seconds": 90,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Nâng hông trên sàn (Glute Bridges)",
+          "sets": 3,
+          "reps": "12-15",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Nhón gót chân (Standing Calf Raises)",
+          "sets": 3,
+          "reps": "15-20",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        }
+      ]
+    },
+    {
+      "day_label": "Buổi 3: Toàn thân và Đốt mỡ nhẹ",
+      "duration_minutes": 60,
+      "exercises": [
+        {
+          "name": "Đứng lên ngồi xuống ghế (Chair Squats)",
+          "sets": 3,
+          "reps": "10-12",
+          "rest_seconds": 90,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Chống đẩy tường (Wall Push-ups)",
+          "sets": 3,
+          "reps": "10-15",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Đi bộ tại chỗ nâng cao đùi (High Knees)",
+          "sets": 3,
+          "reps": "30 giây",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Plank khuỷu tay (Forearm Plank)",
+          "sets": 3,
+          "reps": "20-30 giây",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        }
+      ]
+    },
+    {
+      "day_label": "Buổi 4: Vận động toàn thân",
+      "duration_minutes": 60,
+      "exercises": [
+        {
+          "name": "Nằm ngẩng chân đạp xe (Bicycle Crunches)",
+          "sets": 3,
+          "reps": "10-12 mỗi bên",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Đứng lên ngồi xuống (Bodyweight Squats)",
+          "sets": 3,
+          "reps": "12-15",
+          "rest_seconds": 90,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Chống đẩy quỳ gối (Knee Push-ups)",
+          "sets": 3,
+          "reps": "8-10",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        },
+        {
+          "name": "Nâng hông một chân (Single-leg Glute Bridges)",
+          "sets": 3,
+          "reps": "8-10 mỗi chân",
+          "rest_seconds": 60,
+          "equipment": [
+            "bodyweight"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Luôn khởi động kỹ từ 5-10 phút các khớp cổ tay, vai, hông, gối trước khi bắt đầu buổi tập.",
+    "Dành 5 phút cuối buổi để giãn cơ nhẹ nhàng.",
+    "Uống đủ nước và nghỉ ngơi ít nhất 1 ngày giữa các buổi tập nếu cảm thấy mỏi cơ.",
+    "Đây là chương trình giáo dục thể chất cơ bản, không phải phương pháp điều trị y tế."
+  ]
+}
