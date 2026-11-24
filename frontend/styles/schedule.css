@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #5d8a47 0%, #7aa85c 52%, #4e753b 100%);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: #131f15;
+}
+
+.logo-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #8ef59d;
+  border-radius: 6px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.nav-pill {
+  display: inline-block;
+  color: #e6f4ea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1px solid #4c7a52;
+  background-color: #18271a;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-pill:hover {
+  border-color: #8ef59d;
+  color: #ffffff;
+}
+
+.nav-pill.active {
+  background-color: #a7e89b;
+  color: #132216;
+  border-color: #a7e89b;
+  font-weight: 700;
+}
+
+.user-pill {
+  padding: 8px 22px;
+  flex-shrink: 0;
+}
+
+/* Main Layout */
+.container {
+  max-width: 1120px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+.page-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* Left Column: Schedule Card */
+.schedule-card {
+  background-color: rgba(19, 31, 21, 0.9);
+  border: 1.5px solid #8ef59d;
+  border-radius: 16px;
+  padding: 24px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+}
+
+.week-header h2 {
+  color: #a7e89b;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.day-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.day {
+  cursor: pointer;
+  font-size: 15px;
+  color: #e2ede4;
+}
+
+.day.active {
+  color: #8ef59d;
+  font-weight: 700;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  color: #a7e89b;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Scrollable Checklist Area */
+.card-scroll-area {
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 14px;
+}
+
+.card-scroll-area::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card-scroll-area::-webkit-scrollbar-thumb {
+  background: #8ef59d;
+  border-radius: 10px;
+}
+
+.checklist-group {
+  margin-bottom: 20px;
+}
+
+.checklist-group h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f4fbf5;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.task-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #8ef59d;
+  cursor: pointer;
+}
+
+.task-item input:checked + .task-text {
+  text-decoration: line-through;
+  color: #96ab99;
+}
+
+.task-text small {
+  color: #a7e89b;
+  font-size: 13px;
+}
+
+.add-inline-btn {
+  background: none;
+  border: none;
+  color: #d8eadb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.add-inline-btn:hover {
+  color: #8ef59d;
+}
+
+/* Right Column: Action Buttons */
+.action-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.btn {
+  padding: 18px 24px;
+  border-radius: 999px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background-color: #f4f7f2;
+  color: #131f15;
+  font-weight: 600;
+}
+
+.btn-accent {
+  background-color: #679c4b;
+  color: #ffffff;
+  border: 1px solid #96c979;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background-color: rgba(19, 31, 21, 0.35);
+  border: 1.5px solid #131f15;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.reminder-toggle-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(24, 36, 43, 0.4);
+  border: 1.5px solid #67e8f9;
+  border-radius: 999px;
+  padding: 14px 24px;
+  transition: all 0.3s ease;
+}
+
+.reminder-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gmail-icon {
+  font-size: 18px;
+}
+
+.reminder-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Style for Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #334155;
+  transition: 0.3s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+/* When the switch is turned on (checked) */
+input:checked + .slider {
+  background-color: #67e8f9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+  background-color: #18242b;
+}
+
+/* Effect when hovering on reminder cluster */
+.reminder-toggle-box:hover {
+  background-color: rgba(24, 36, 43, 0.7);
+  transform: translateY(-2px);
+}

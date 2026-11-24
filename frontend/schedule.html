@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Schedule & Nutrition</title>
+  <link rel="stylesheet" href="styles/schedule.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#" class="logo-box" aria-label="Brand Logo">
+      <svg class="logo-bolt" viewBox="0 0 36 36" width="28" height="28">
+        <polygon points="18,5 10,18 18,18" fill="#8ef59d" />
+        <polygon points="18,18 26,18 18,31" fill="#8ef59d" />
+      </svg>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#" class="nav-pill">Home</a>
+      <a href="#" class="nav-pill active">Weekly Schedule & Nutrition</a>
+      <a href="#" class="nav-pill">Main Chat & Workout</a>
+      <a href="#" class="nav-pill">Chat History</a>
+      <a href="#" class="nav-pill">All tabs</a>
+    </nav>
+
+    <a href="#" class="nav-pill user-pill">User</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1 class="page-title">1-Month Training Plan</h1>
+
+    <div class="content-grid">
+      <!-- Left Column: Schedule Card -->
+      <section class="schedule-card">
+        <div class="week-header">
+          <h2>Week 1: Muscle Gain & Fat Loss</h2>
+          <div class="day-selector">
+            <button class="arrow-btn" type="button">←</button>
+            <span class="day active">Mon</span>
+            <span class="day">Tue</span>
+            <span class="day">Wed</span>
+            <span class="day">Thu</span>
+            <span class="day">Fri</span>
+            <span class="day">Sat</span>
+            <span class="day">Sun</span>
+            <button class="arrow-btn" type="button">→</button>
+          </div>
+        </div>
+
+        <div class="card-scroll-area">
+          <!-- Workout Section -->
+          <div class="checklist-group">
+            <h3>Daily Workout</h3>
+            <label class="task-item">
+              <input type="checkbox">
+              <span class="task-text">Push-up <small>(3 sets x 12 reps | Rest 60s)</small></span>
+            </label>
+            <label class="task-item">
+              <input type="checkbox">
+              <span class="task-text">Squat <small>(4 sets x 15 reps | Rest 90s)</small></span>
+            </label>
+            <button class="add-inline-btn" type="button">+ Add Task</button>
+          </div>
+
+          <!-- Nutrition Section -->
+          <div class="checklist-group">
+            <h3>Daily Meal Checklist</h3>
+            <label class="task-item">
+              <input type="checkbox">
+              <span class="task-text">Morning: 2 fried eggs + 1 slice of whole-grain bread</span>
+            </label>
+            <label class="task-item">
+              <input type="checkbox">
+              <span class="task-text">Lunch: 150g pan-seared chicken breast + 1 bowl of brown rice</span>
+            </label>
+            <button class="add-inline-btn" type="button">+ Add Meal</button>
+          </div>
+
+          <!-- Recovery & Rest Section -->
+          <div class="checklist-group">
+            <h3>Recovery & Rest</h3>
+            <label class="task-item">
+              <input type="checkbox">
+              <span class="task-text">10-minute full-body stretching after workout</span>
+            </label>
+            <label class="task-item">
+              <input type="checkbox">
+              <span class="task-text">Get 7.5 - 8 hours of sleep (Before 11:30 PM)</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Action Buttons -->
+      <section class="action-panel">
+        <button class="btn btn-light" type="button">+ Add Note</button>
+        <button class="btn btn-accent" type="button">AI Auto Suggest</button>
+        <div class="reminder-toggle-box">
+          <div class="reminder-info">
+            <span class="gmail-icon">📧</span>
+            <span class="reminder-text">GMAIL DAILY REMINDER</span>
+          </div>
+        <label class="switch">
+          <input type="checkbox" id="reminderSwitch">
+          <span class="slider round"></span>
+        </label>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+  const reminderSwitch = document.getElementById("reminderSwitch");
+  const STORAGE_KEY = "gmailDailyReminderEnabled";
+
+  if (reminderSwitch) {
+    const savedState = localStorage.getItem(STORAGE_KEY);
+    if (savedState !== null) {
+      reminderSwitch.checked = savedState === "true";
+    }
+
+    reminderSwitch.addEventListener("change", () => {
+      localStorage.setItem(STORAGE_KEY, reminderSwitch.checked);
+    });
+  }
+</script>
+</body>
+</html>
